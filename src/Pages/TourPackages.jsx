@@ -71,8 +71,8 @@ const TourPackages = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-3 space-y-3">
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-semibold text-red-600">
+                <div className="flex justify-between ">
+                  <h3 className="text-lg max-w-57 font-semibold text-red-600">
                     {pkg.title}
                   </h3>
                   <span className="text-gray-600 text-lg font-medium text-red-600">
@@ -99,7 +99,7 @@ const TourPackages = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-gradient-to-r from-purple-100 via-red-100 to-purple-100 text-black text-center py-16 px-4">
+      <section className="bg-gradient-to-r from-purple-100 via-red-100 to-purple-100 text-black text-center py-10 px-4">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
           Need a Custom Tour Package?
         </h2>
@@ -119,8 +119,6 @@ const TourPackages = () => {
           Chat With Us
         </button>
       </section>
-
-      <div className="h-16"></div>
     </div>
   );
 };

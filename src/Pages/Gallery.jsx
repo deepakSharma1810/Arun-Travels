@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 
 const images = [
-  { src: "/images/gallery1.jpg" },
-  { src: "/images/gallery2.jpg" },
-  { src: "/images/gallery3.jpg" },
-  { src: "/images/gallery4.jpg" },
-  { src: "/images/gallery5.jpg" },
-  { src: "/images/gallery6.jpg" },
+  { src: "/Gallery/sangam.jpg" },
+  { src: "/Gallery/sangam-01.jpg" },
+  { src: "/Gallery/nepal.jpg" },
+  { src: "/Gallery/nepal-01.jpg" },
+  { src: "/Gallery/haridwar.jpg" },
+  { src: "/Gallery/VaishnuDevi.jpg" },
+  { src: "/Gallery/KhatuShyam.jpg" },
+  { src: "/Gallery/LalQuila.jpg" },
+  { src: "/Gallery/VaishnuDevi-02.jpg" },
 ];
 
-// ScrollToTop yahin import kar lo
 const ScrollToTop = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -45,14 +47,14 @@ const Gallery = () => {
             <img
               src={img.src}
               alt={img.title}
-              className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+              className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         ))}
       </div>
 
       {/* Call to Action Section */}
-      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-16 px-4 mb-18">
+      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-10 px-4">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
           Ready to Explore India?
         </h2>

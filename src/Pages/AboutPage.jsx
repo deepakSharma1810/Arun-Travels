@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+const ScrollToTop = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+  return null;
+};
 
 const AboutPage = () => {
   return (
     <div className="bg-gray-50 text-gray-800 mt-18">
+      <ScrollToTop />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-20 px-4">
+      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-10  px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
           We are a leading travel agency based in Ayodhya, specializing in
@@ -14,7 +22,7 @@ const AboutPage = () => {
       </section>
 
       {/* Who We Are Section */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-6">
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center space-y-6">
         <h2 className="text-2xl md:text-3xl font-semibold text-red-600">
           Who We Are
         </h2>
@@ -33,7 +41,7 @@ const AboutPage = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-red-600">
             Our Mission & Vision
@@ -53,12 +61,12 @@ const AboutPage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-12 text-red-600">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-red-600">
           Why Choose Us
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="text-center bg-white shadow-md rounded-xl p-8 hover:shadow-lg transition">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="text-center bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
             <h3 className="text-xl font-semibold mb-2 text-red-600">
               Tailored Itineraries
             </h3>
@@ -89,7 +97,7 @@ const AboutPage = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-16 px-4">
+      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-8 px-4">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
           Ready to Explore India?
         </h2>
@@ -108,9 +116,6 @@ const AboutPage = () => {
           Enquire Now on WhatsApp
         </button>
       </section>
-
-      {/* Footer Spacer */}
-      <div className="h-16"></div>
     </div>
   );
 };
