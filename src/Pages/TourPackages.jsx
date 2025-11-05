@@ -47,7 +47,7 @@ const TourPackages = () => {
     <div className="bg-gray-50 text-gray-800 mt-18">
       <ScrollToTop />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-20 px-4">
+      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-12 px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Explore Our Tour Packages
         </h1>

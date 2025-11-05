@@ -24,7 +24,7 @@ const Gallery = () => {
     <div className="bg-gray-50 text-gray-800 mt-18">
       <ScrollToTop />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-15 px-4">
+      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-12 px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Gallery</h1>
         <p className="max-w-7xl mx-auto text-lg md:text-xl">
           Explore our gallery to experience the divine essence of Ayodhya, Kashi

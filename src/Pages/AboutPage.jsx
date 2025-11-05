@@ -12,7 +12,7 @@ const AboutPage = () => {
     <div className="bg-gray-50 text-gray-800 mt-18">
       <ScrollToTop />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-10  px-4">
+      <section className="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 text-black text-center py-12 px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
           We are a leading travel agency based in Ayodhya, specializing in
