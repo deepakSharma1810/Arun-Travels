@@ -99,14 +99,14 @@ const Navbar = () => {
           <Link to="/" onClick={() => setMenuOpen(false)}>
             <li className="hover:text-red-600 cursor-pointer">Home</li>
           </Link>
-          <Link to="/tour-package" onClick={() => setMenuOpen(false)}>
-            <li className="hover:text-red-600 cursor-pointer">Packages</li>
+          <Link to="/about" onClick={() => setMenuOpen(false)}>
+            <li className="hover:text-red-600 cursor-pointer">About</li>
           </Link>
           <Link to="/gallery" onClick={() => setMenuOpen(false)}>
             <li className="hover:text-red-600 cursor-pointer">Gallery</li>
           </Link>
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
-            <li className="hover:text-red-600 cursor-pointer">About</li>
+          <Link to="/tour-package" onClick={() => setMenuOpen(false)}>
+            <li className="hover:text-red-600 cursor-pointer">Packages</li>
           </Link>
         </ul>
       </div>
