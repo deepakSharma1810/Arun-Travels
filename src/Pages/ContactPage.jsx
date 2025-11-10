@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  MessageSquare,
-  Mail,
-  Phone,
-  User,
-  Clock,
-  Calendar,
-} from "lucide-react";
+import { Mail, Phone, User, Clock, Calendar } from "lucide-react";
 
 const ScrollToTop = () => {
   useEffect(() => {
@@ -58,7 +51,6 @@ const ContactPage = () => {
 
     if (option === "call-now") {
       window.location.href = `tel:+919026169131`;
-      // window.location.href = `tel:+91${phone}`;
       return;
     }
 
@@ -165,22 +157,6 @@ const ContactPage = () => {
                 <p className="text-red-500 text-sm mt-1">{errors.option}</p>
               )}
             </div>
-
-            {/* Message */}
-            {/* {option === "call-now" && (
-              <div>
-                <div className="flex items-start border rounded-lg px-3 py-2 focus-within:ring-2 ring-red-600">
-                  <MessageSquare className="text-gray-400 w-5 h-5 mr-2 mt-1" />
-                  <textarea
-                    rows="4"
-                    placeholder="Your Message"
-                    className="w-full resize-none focus:outline-none"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                  ></textarea>
-                </div>
-              </div>
-            )} */}
 
             {/* Schedule Date & Time */}
             {option === "schedule-call" && (

@@ -27,11 +27,13 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="h-10 w-10 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">
-              AT
-            </div>
+            <img
+              src="/Ramrath-logo.png"
+              alt="Awadhi Travels Logo"
+              className="h-10 w-10 rounded-full object-contain"
+            />
             <div className="font-semibold text-lg text-gray-800">
-              Arun Travels
+              Ramrath Travels
             </div>
           </Link>
         </div>
@@ -63,7 +65,7 @@ const Navbar = () => {
         {/* Right Section */}
         <div className="flex items-center gap-3">
           <Link to="/contact-us">
-            <button className="bg-red-600 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2 font-bold cursor-pointer">
+            <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2 font-bold cursor-pointer">
               Contact Us
             </button>
           </Link>
