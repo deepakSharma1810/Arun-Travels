@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-40">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           {/* Menu icon - visible only on small screens */}
           <button
             className="md:hidden text-3xl text-red-600"
@@ -26,7 +26,7 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2">
             <img
               src="/Ramrath-logo.png"
               alt="Awadhi Travels Logo"
